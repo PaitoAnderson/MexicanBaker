@@ -9,7 +9,7 @@ if ($_POST) {
 	
 
 	//Email Paito/Linda about a new comment.
-	$to = "pj.paito@gmail.com, lindadyckenns@gmail.com";
+	$to = "XXXX@gmail.com, XXXX@gmail.com";
 	$subject = "Mexican Baker - " . $subject;
 	$theirname = "From: " . $name1 . "\r\r\n\r\r\n";
 	$theiremail = "\r\r\n\r\r\nE-Mail them at: " . $email;

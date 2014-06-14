@@ -33,7 +33,7 @@ if ($_POST) {
 	mysql_query($query) or die(mysql_error());
 
 	//Email Paito/Linda about a new comment.
-	$to = "pj.paito@gmail.com, lindadyckenns@gmail.com";
+	$to = "XXXX@gmail.com, XXXX@gmail.com";
 	$subject = "Mexican Baker - New Comment from " . $name1;
 	if (strlen($website) > 3) {
 		$theirwebsite = "\r\r\n\r\r\nVisit Their Webite:" . $website;
