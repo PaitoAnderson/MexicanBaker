@@ -1,0 +1,23 @@
+# Protect the .htaccess file
+<Files .htaccess>
+	Order Allow,Deny
+	Deny from all
+</Files>
+
+# Disable directory browsing
+Options All -Indexes
+
+# First Parameer (Single Pages)
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?view=null&id=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?view=null&id=$1
+
+# Second Parameter (Core Methods)
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?view=$1&id=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)/$ index.php?view=$1&id=$2
+
+# Third Parameter (Fancy URLs)
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)/([a-zA-Z0-9_-]+)$ index.php?view=$1&id=$2&url=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)/([a-zA-Z0-9_-]+)$ index.php?view=$1&id=$2&url=$3
