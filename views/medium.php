@@ -1,0 +1,1 @@
+<h1>View for archive page</h1>

@@ -1,0 +1,584 @@
+/* 
+	Resets defualt browser settings
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0; outline:0; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+:focus { outline:0; }
+a:active { outline:none; }
+body { line-height:1; color:black; background:white; }
+ol,ul { list-style:none; font-size:12pt;}
+table { border-collapse:separate; border-spacing:0; }
+caption,th,td { text-align:left; font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+/* GLOBAL PAGE STYLES */
+body { 
+	font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+	letter-spacing:0;
+	color:#434343;
+	position:relative;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+	background-color: #B8D2D0;
+    background: #B8D2D0 url(/images/stripe2.png) 0 0 repeat;
+}
+
+.coollink, .coollink:hover, .coollink:visited {
+	text-decoration: none;
+	color: #434343;
+	border-bottom: 1px solid #434343;
+}
+.coollink:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+#outer-wrap-centered {
+	width: 964px;
+	margin: 0 auto;
+}
+#main-wrap-outer {
+	background: transparent url(../images/dropshadow_sides.png) repeat-y top left;
+}
+#main-wrap-inner {
+	background: transparent url(../images/dropshadow_sides.png) repeat-y top right;
+}
+
+#container {
+	width:950px; /*OLD: 580 */
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+	overflow: hidden;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	background-color: white;
+}
+#content {
+	background-image: none;
+	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: scroll;
+}
+
+.footer-tree {
+	float:right;
+	position:relative;
+	right: 20px;
+	top: -160px;
+	z-index:5;
+	margin-bottom: -400px;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#rssinfo {
+    width: 600px;
+	padding: 30px; 
+    display:none;
+	
+    background: #FFF;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+
+#rssinfo p { color: #666; text-shadow: none; }
+
+article, aside, footer, header, hgroup, nav, section {
+	display: block;
+}
+h1 {
+	font-size: 25pt;
+	text-transform: uppercase;
+}
+h1 .link {
+	text-decoration: none;
+	color: #434343;
+	border: none;
+}
+h1 .link:hover {
+	border-bottom: 1px solid #434343;
+}
+/* POST STYLES */
+.postdate {
+	text-align: center;
+	font-family: Baskerville, Baskerville Old Face, Perpetua, Palatino, Palatino Linotype, Palatino LT STD, Times New Roman, Times, serif;
+	font-size: 13pt;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.postbody {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12pt;
+}
+.postimage {
+	max-width: 100%;
+}
+
+.lightbox, .lightbox:hover {
+	border: none;
+}
+
+.recipecard {
+	padding: 10px;
+	margin: 0px 10px 0 10px;
+	/*WAS: #f6f3ec */
+	background: rgba(227,222,211,0.5) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAGElEQVQIHWM4s2f1f4b///8zMPva6kBYAHN0CuVoDKbzAAAAAElFTkSuQmCC') left bottom repeat-x;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+	border-top: 1px solid #fdfcfa;
+	position: relative;
+	z-index: 100;
+}
+
+.recipecard ul {
+	list-style-type:square;
+	padding-left: 20px;
+}
+
+.recipecard h2 {
+	font-size: 15pt;
+	text-transform: uppercase;
+}
+.recipeprintbutton {
+	float:right;
+}
+.recipeprintbutton a {
+	text-decoration: none;
+	color: #434343;
+}
+.posttitle {
+	padding-bottom:5px;
+	padding-left:10px;
+	font-size:25pt;
+	text-align: center;
+}
+
+.posttitle a:hover {
+	border: 0px;
+	color: black;
+}
+
+.postpadding {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12pt;
+}
+
+.credit {
+	padding: 5px;
+}
+
+.continuereading {
+	text-align: center;
+}
+
+.continuereading a, .continuereading a:visited {
+	font-family: Baskerville, Baskerville Old Face, Perpetua, Palatino, Palatino Linotype, Palatino LT STD, Times New Roman, Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 1.4em;
+	text-decoration: none;
+	font-size: 24px;
+	color: #1F1F1F;
+}
+
+/* SMALL VIEW STYLES */
+.smallviewimg {
+	
+}
+
+/* SLIDER STYLES */
+#span12 {
+	width:950px; /* OLD: 600 */
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+.pagination2 {
+	text-align: center;
+}
+.slidesjs-pagination-div {
+    width: 100%;
+    text-align: center;
+}
+.slidesjs-pagination {
+	margin:13px auto 0;
+	display: inline-block;
+}
+
+.slidesjs-pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.slidesjs-pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination_pink.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.slidesjs-pagination li a.active {
+	background-position:0 -12px;
+}
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:24px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:910px; /* OLD:530 */
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+/* ABOUT THE AUTHOR */
+
+.abouttheauthor {
+	width: 100%;
+	height: 150px;
+	padding: 0px;
+	margin: 0px;
+	background: #434343 url(../images/concrete_wall.png) repeat-x;
+	display: block;
+	box-shadow: inset 0px 10px 10px -10px #000, inset 0px -10px 10px -10px #000;
+}
+
+.atapic {
+	float: left;
+	width: 100px;
+	padding: 25px;
+}
+
+.atapic img {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.atatext {
+	float: left;
+	padding: 25px;
+	text-shadow: none;
+	color:white;
+	width: 650px;
+	font-size: 10pt;
+}
+
+.atatext h2 {
+	font-size: 15pt;
+	text-shadow: none;
+	color: white;
+}
+
+/* POST COMMENT STYLES */
+input, select {
+	height: 30px;
+}
+input, textarea, select {
+	-webkit-appearance: none;
+	background-color: #F8F8F8;
+	border: 1px solid #E8E8E8;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #8F8F8F;
+	font-size: 12px;
+	padding: 5px 10px;
+}
+input, select {
+	vertical-align: middle;
+}
+input:hover, textarea:hover, select:hover {
+	border-color: #DEDEDE;
+}
+.input-block {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+#commentform textarea {
+	width: 887px; /*!important;*/
+}
+#commentform input {
+	width: 268px;
+}
+.button, input[type="submit"], input[type="reset"], button {
+	/*background: #C4453C;*/
+	background: #E0598E;
+	border: none;
+	color: #fff;
+	cursor: pointer;	
+	font-weight: 400;
+	height: auto;
+	overflow: visible;
+	padding: 7px 20px;
+	-webkit-transition: background-color .2s ease;
+	   -moz-transition: background-color .2s ease;
+		-ms-transition: background-color .2s ease;
+		 -o-transition: background-color .2s ease;
+			transition: background-color .2s ease;
+	width: auto;
+	margin-top: 10px;
+}
+
+.button:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+	/*background: #b4352C;*/
+	background: #C94278;
+	color: #fff;
+}
+label {
+	cursor: pointer;
+	display: block;
+	margin: 0 0 5px;
+}
+textarea {
+	padding: 10px;
+	resize: both;
+}
+/* COMMENT STYLES */
+#comments .comment {
+	clear:both;
+}
+#comments {
+	padding: 5px;
+}
+.comment {
+	border-top: 1px dotted #BEC8CF;
+	list-style: none;
+	margin: 10px 0 0;
+	padding: 15px 0 0;
+}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+.comment > article {
+	margin: 0;
+	overflow: hidden;
+}
+.comment .avatar {
+	background: white;
+	float: left;
+	margin: 0 0 5px 0;
+	position: relative;
+	width: 50px;
+	z-index: 1;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.comment .comment-meta {
+	margin-bottom: 0;
+}
+.comment .comment-body, .comment .comment-meta {
+	float: right;
+	margin: 0px;
+	width: 871px;
+}
+.comment .date2, .comment .date2 a, .comment .date2 time {
+	color: #94989c;
+	font-style: italic;
+	margin: 1px 0 5px;
+}
+.comment .author cite {
+	font-style: normal;
+}
+.hidecomment {
+	float:right;
+}
+.hidecomment a {
+	text-decoration: none;
+	color: black;
+}
+.hidecomment a:hover {
+	border-bottom: 1px solid black;
+}
+#reply {
+	clear: both;
+}
+.reply {
+	padding: 5px;
+}
+/* Home / Nav styles */
+#header {
+	text-align: center;
+}
+#topNav {
+	padding-top: 25px;
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#logo {
+	clear:both;
+	text-align:center;
+}
+#logo a {
+	border: none;
+}
+.main-nav a, .main-nav a:visited {
+	font-family: Baskerville, Baskerville Old Face, Perpetua, Palatino, Palatino Linotype, Palatino LT STD, Times New Roman, Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 1.4em;
+	text-decoration: none;
+	font-size: 24px;
+	color: #1F1F1F;
+	border: none;
+}
+.main-nav li {
+	text-align: center
+}
+.main-nav li {
+	float: left;
+	padding-right: 32px;
+	padding-left: 32px;
+}
+.main-nav ul {
+	display: inline-block;
+}
+.updatebrowser {
+	width:100%;
+	height: 25px;
+	clear:both;
+	background-color: yellow;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12pt;
+	text-align: center;
+}
+.updatebrowser a {
+	text-decoration: none;
+}
+.updatebrowser a:hover {
+	font-weight: bold;
+}
+.socialicon {
+	float:left;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+/* MOBILE CSS */
+@media (max-width: 480px) {
+
+	/*MAIN PAGE */
+	body {
+		background: none;
+	}
+	#outer-wrap-centered {
+		width: auto;
+	}
+	#main-wrap-outer {
+		background: none;
+	}
+	#main-wrap-inner {
+		background: none;
+	}
+	#container {
+		width: auto;
+	}
+	#span12 {
+		width: auto;
+	}
+	#logo img {
+		width: 300px;
+		height: 150px;
+	}
+	.main-nav li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.recipeprintbutton {
+		display: none;
+	}
+
+	/*SlidesJS*/
+	#slides img {
+		max-width: 100%;
+	}
+	.slidesjs-pagination {
+		display: none;
+	}
+	
+	/*ABOUT THE AUTHOR*/
+	.abouttheauthor {
+		height: 180px;
+		background: #434343 url(../images/concrete_wall.png) repeat;
+	}
+	.atapic {
+		display: none;
+	}
+	.atatext {
+		width: auto;
+	}
+
+	/*COMMENTS*/
+	.comment .avatar {
+		margin-right: 10px;
+	}
+	.comment .comment-body, .comment .comment-meta {
+		float: none;
+		width: auto;
+	}
+	#commentform p {
+		width: 100%
+	}
+	#commentform label {
+		float:left;
+		clear: both;
+	}
+	#commentform input {
+		width: 93%;
+		clear: both;
+	}
+	#commentform textarea {
+		width: 93%;
+	}
+
+	/*FOOTER*/
+	.footer-tree {
+		display: none;
+	}
+}
