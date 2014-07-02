@@ -11,7 +11,7 @@ echo "\n\r\t<link href='" . $basepath . "css/screen.css' rel='stylesheet' />";
 echo "\n\r\t<link href='" . $basepath . "css/lightbox.css' rel='stylesheet' />";
 echo "\n\r\t<link href='" . $basepath . "css/tipsy.css' rel='stylesheet' />";
 echo "\n\r\t<script src='" . $basepath . "js/jquery-1.7.2.min.js'></script>";
-echo "\n\r\t<script src='" . $basepath . "js/lightbox.js'></script>";
+echo "\n\r\t<script src='" . $basepath . "js/lightbox.min.js'></script>";
 echo "\n\r\t<script src='" . $basepath . "js/jquery.smooth-scroll.min.js'></script>";
 echo "\n\r\t<script src='" . $basepath . "js/jquery.tipsy.js'></script>";
 echo "\n\r\t<script src='" . $basepath . "js/base.js'></script>";
