@@ -3,7 +3,7 @@ session_start();
 $servername = $_SERVER['SERVER_NAME'];
 date_default_timezone_set('America/Toronto');
 
-$basepath = "http://" . $servername . "/";
+$basepath = "https://" . $servername . "/";
 require("include/dbconnect.php");
 
 $perpage = 4;
